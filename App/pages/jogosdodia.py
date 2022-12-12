@@ -6,6 +6,10 @@ from datetime import date
 
 st.title("Jogos do Dia")
 
+dia = st.date_input(
+    "Data de Análise",
+    date.today())
+
 def load_data_jogos():
     data_jogos = pd.read_excel("https://github.com/rpthiago/JogosHoje/blob/main/lay_away.xlsx?raw=true")
     
