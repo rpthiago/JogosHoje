@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import datetime
 from datetime import date
-import openpyxl
 
 st.title("Jogos do Dia")
 
