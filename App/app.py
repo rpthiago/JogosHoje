@@ -35,3 +35,8 @@ def load_data(league, season):
   url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
   data = pd.read_csv(url)
   return data
+
+df = load_data(selected_league, selected_season)
+
+st.subheader("Dataframe: "+selected_league)
+st.dataframe(df)
