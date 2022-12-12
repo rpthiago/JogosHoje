@@ -7,7 +7,7 @@ from datetime import date
 st.title("Jogos do Dia")
 
 def load_data_jogos():
-    data_jogos = pd.read_xlsx("https://github.com/rpthiago/JogosHoje/blob/main/jogos_dia_completo.xlsx?raw=true")
+    data_jogos = pd.read_excel("https://github.com/rpthiago/JogosHoje/blob/main/jogos_dia_completo.xlsx?raw=true")
     
     return data_jogos
 
