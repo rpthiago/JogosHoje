@@ -12,7 +12,7 @@ dia = st.date_input(
     date.today())
 
 def load_data_jogos():
-    data_jogos = pd.read_excel("https://github.com/rpthiago/JogosHoje/blob/main/lay_away.xlsx?raw=true")
+    data_jogos = pd.read_csv("https://github.com/rpthiago/JogosHoje/blob/main/final.csv?raw=true")
     
     return data_jogos
 
