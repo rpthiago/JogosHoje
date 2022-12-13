@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -11,7 +12,7 @@ dia = st.date_input(
     date.today())
 
 def load_data_jogos():
-    data_jogos = pd.read_csv("https://github.com/rpthiago/JogosHoje/blob/main/over_05_ht.csv?raw=true")
+    data_jogos = pd.read_csv("https://github.com/rpthiago/JogosHoje/blob/main/lay_away.csv?raw=true")
     
     return data_jogos
 
