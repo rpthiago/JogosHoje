@@ -11,8 +11,8 @@ dia = st.date_input(
     date.today())
 
 def load_data_jogos():
-    data_jogos = pd.read_csv("https://github.com/rpthiago/JogosHoje/blob/main/metodounder4_5.csv?raw=true")
-    
+    data_jogos = pd.read_csv("https://github.com/rpthiago/JogosHoje/blob/main/"+str(dia)+"_metodounder4_5.csv")
+
     return data_jogos
 
 df_jogos = load_data_jogos()
